@@ -5,4 +5,5 @@ Technologies used:
 * React
 * Axios
 
+![home page](readme/home.png)
 
