@@ -36,27 +36,6 @@ const Authors = () => {
         res = res.data;
         return await res;
     }
-    const rangeList = (list) => {
-        for (let i = 0; i < list.length; i++){
-            list[i].rate = i+1;
-        }
-        return list;
-
-    }
-    
-    const getFullList = async () => {
-        let init_list = await api.get("/authors/all");
-        init_list = init_list.data;
-        setTotalPgs(init_list.totalPages);
-        for(let i = 1; i < totalPgs; i++) {
-            let new_list = await api.get("/authors/all?page="+i);
-            init_list.concat(new_list);
-        }
-        
-        return rangeList(init_list);
-
-    }
-    
    
     
 
@@ -73,7 +52,6 @@ const Authors = () => {
         const getAuthors = async () => {
             const data = await fetchAuthors(activePage, searchName, searchAffiliation, sortingOrder, sortingType);
             setAuthorsList(rangeList(data.authors));
-            //setAuthorsList(getFullList);
             setTotalPgs(data.totalPages);
           
         }
