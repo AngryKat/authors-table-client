@@ -1,0 +1,99 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    margin: 35px;
+}
+
+.pagination a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #6c7ac9;
+    color: #6c7ac9;
+}
+
+.pagination__link {
+    font-weight: bold;
+}
+
+.pagination__link--active a {
+    color: #fff;
+    background: #6c7ac9;
+}
+
+.pagination__link--disabled a {
+    color: rgb(198, 197, 202);
+    border: 1px solid rgb(198, 197, 202);
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar  {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.bottom-line {
+    padding-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+.search-bar label {
+    margin: 0 10px;
+}
+.search-bar .authorModal {
+    float: right;
+}
+
+.author-data {
+    border: solid black 1px;
+}
+
+.basic-margin {
+    margin: 30px;
+}
+
+.table-fixed-layout {
+    table-layout: fixed;
+}
+
+.paper-cell {
+    background-color: wheat;
+    font-weight: bold;
+}
+
+.paper-header-row {
+    background-color: blue;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.papers-table {
+    margin-top: 20px;
+}
+.papers-table .cell-shrink {
+    width: 10%;
+    overflow: hidden;
+}
+
+.papers-table .cell-largest {
+    width: 40%;
+    overflow: hidden;
+}
+
+.papers-table .cell-large {
+    width: 20%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
